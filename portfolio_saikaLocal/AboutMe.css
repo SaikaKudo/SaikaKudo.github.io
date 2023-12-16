@@ -1,0 +1,180 @@
+body{
+    font-family: "Futura PT","Yu Gothic";
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ---------MENUのCSS--------- */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav{
+    width:100%;
+    height:100px;
+    background: #DA7992 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-bottom: 10px solid #F5E428;
+}
+
+#headul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.headli {
+    list-style: none;
+}
+.head_a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1em;
+    padding-right: 3em;
+    font: normal normal normal 20px/30px Futura PT;
+    letter-spacing: 0px;
+    opacity: 1;
+    transition: .2s
+}
+
+.head_a:hover{
+    transform: translateY(-5px);
+}
+
+/* ---------aboutme(aboutme.html)のCSS--------- */
+.title{
+    color: #707070;
+    font: normal normal normal 60px/77px Futura PT;
+    letter-spacing: 0px;
+}
+
+#aboutme{
+    text-align: center;
+    margin-top: 10em;
+}
+
+#myName{
+    width:40%;
+    margin-bottom: 5%;
+}
+
+#mePic{
+    width:20%;
+}
+
+#intro{
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+#bio table{
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+/* ---------skillsのCSS--------- */
+#skills{
+    margin-top:10em;
+    text-align: center;
+}
+
+#skillscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+#skillscontainer section{
+    width:50%;
+    margin-top:1em;
+}
+
+
+#skillscontainer table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skillscontainer td{
+    padding-left: 1em;
+}
+
+#skillscontainer th{
+    padding-top: 0.5em;
+}
+
+
+
+/* ---------footerのCSS--------- */
+footer{
+    margin-top: 10em;
+    width:100%;
+    height:145px;
+    background: #DA7992 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top: 35px;
+    box-sizing: border-box;
+    border-top: 10px solid #F5E428;
+    text-align: center;
+    color:#ffffff;
+    margin-bottom: 0;
+}
+
+@media (min-width: 365px) and (max-width: 767px) {
+    html{
+        overflow:auto;
+    }
+
+    body{
+        overflow: hidden;
+        min-width: fit-content;
+    }
+
+    #header{
+        width:100%;
+    }
+
+    #home img{
+        width:100%;
+    }
+
+    #aboutmeContainer{
+        display: block;
+        font-size: 20px;
+    }
+
+    #container1{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #container2{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+}
