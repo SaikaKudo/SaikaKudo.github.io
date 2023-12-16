@@ -1,2 +1,0 @@
-# saikakudo-sPortfolio
-My Portfolio
