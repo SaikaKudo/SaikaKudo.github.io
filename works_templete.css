@@ -130,6 +130,30 @@ td,th{
 }
 
 
+/* ---------OCwebのCSS--------- */
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+    margin-top:5rem;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.item{
+    width:45%;
+    align-self: center;
+}
+
+.itemImg{
+    width:75%;
+}
+
+.itemTitle{
+    font-weight: bold;
+}
+
+
 /* ---------footerのCSS--------- */
 footer{
     margin-top: 10em;
