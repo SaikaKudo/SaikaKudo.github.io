@@ -88,7 +88,10 @@ nav{
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
+    text-align: left;
+    padding-left: 1rem;
 }
+
 
 /* ---------skillsのCSS--------- */
 #skills{
@@ -100,15 +103,31 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
     font-family: Yu Gothic;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
 }
 
-#skillscontainer section{
-    width:50%;
+.child{
+    width:45%;
     margin-top:1em;
+}
+
+.toolcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.toolItem {
+    text-align: left;
+    width: 50%; /* 適宜調整してください */
+    margin: 5px 0;
 }
 
 
@@ -124,6 +143,12 @@ nav{
 
 #skillscontainer th{
     padding-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .child {
+        width: 100%; /* SPでは1行4列になるように調整 */
+    }
 }
 
 

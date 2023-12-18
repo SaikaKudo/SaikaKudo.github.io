@@ -14,6 +14,7 @@ html{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
 }
 
 nav{
@@ -58,10 +59,7 @@ nav{
 #home{
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 350px;
-    padding-bottom: 200px; */
     left: 261px;
-    
 }
 
 #home img{
