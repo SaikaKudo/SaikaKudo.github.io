@@ -126,7 +126,7 @@ nav{
 
 .toolItem {
     text-align: left;
-    width: 50%; /* 適宜調整してください */
+    width: 50%; 
     margin: 5px 0;
 }
 
@@ -147,7 +147,7 @@ nav{
 
 @media (max-width: 767px) {
     .child {
-        width: 100%; /* SPでは1行4列になるように調整 */
+        width: 100%; 
     }
 }
 

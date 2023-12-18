@@ -169,6 +169,15 @@ nav{
     font-weight: normal;
 }
 
+#pickup img{
+    width:75%;
+}
+
+@media (max-width: 767px) {
+    #pickup img {
+        width: 100%;
+    }
+}
 .animation{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;

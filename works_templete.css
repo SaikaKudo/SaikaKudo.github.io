@@ -14,6 +14,7 @@ html{
     top: 0;
     left: 0;
     width: 100%;
+    z-index:2;
 }
 
 nav{
@@ -151,6 +152,36 @@ td,th{
 
 .itemTitle{
     font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .item {
+        width: 100%; 
+    }
+
+    .i3{
+        order : 4;
+    }
+
+    .i4{
+        order : 3;
+    }
+
+    .i7{
+        order : 8;
+    }
+
+    .i8{
+        order : 7;
+    }
+
+    .i11{
+        order : 12;
+    }
+
+    .i12{
+        order : 11;
+    }
 }
 
 
