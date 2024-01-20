@@ -143,7 +143,9 @@ td,th{
 
 .item{
     width:45%;
+    text-align: justify;
     align-self: center;
+
 }
 
 .itemImg{
