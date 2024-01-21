@@ -151,7 +151,8 @@ td,th{
 }
 
 .itemImg{
-    width:100%;
+    width:90%;
+    margin-left:1rem;
 }
 
 .itemTitle{
@@ -160,33 +161,51 @@ td,th{
 
 @media (max-width: 767px) {
     .item {
-        width: 100%; 
+        width: 90%; 
     }
 
-    .i3{
-        order : 4;
+    .i3 {
+        order:4;
     }
 
-    .i4{
-        order : 3;
+    .i4 {
+        order:3;
     }
 
-    .i7{
-        order : 8;
+    .i7 {
+        order: 8;
     }
 
-    .i8{
-        order : 7;
+    .i8 {
+        order: 7;
     }
 
-    .i11{
-        order : 12;
+    .i11 {
+        order: 12;
     }
 
-    .i12{
-        order : 11;
+    .i12 {
+        order: 11;
     }
+
+    .i13 {
+        order: 14;
+    }
+
+    .i14 {
+        order: 13;
+    }
+
+    .i17 {
+        order: 17;
+    }
+
+    .i18 {
+        order: 18;
+    }
+
 }
+
 
 
 /* ---------footerのCSS--------- */
