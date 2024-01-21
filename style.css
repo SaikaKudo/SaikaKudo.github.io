@@ -164,13 +164,21 @@ nav{
 
 }
 
+#pickUpFlex{
+    display:flex;
+}
+
 #pickup h2{
     color:#707070;
     font-weight: normal;
 }
 
-#pickup img{
-    width:75%;
+.oc{
+    width:100%;
+}
+
+.jiten{
+    width:50%;
 }
 
 @media (max-width: 767px) {

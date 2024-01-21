@@ -164,6 +164,14 @@ td,th{
         width: 90%; 
     }
 
+    .i1{
+        order:1;
+    }
+
+    .i2{
+        order:2;
+    }
+
     .i3 {
         order:4;
     }
@@ -172,12 +180,28 @@ td,th{
         order:3;
     }
 
+    .i5{
+        order:5;
+    }
+
+    .i6{
+        order:6;
+    }
+
     .i7 {
         order: 8;
     }
 
     .i8 {
         order: 7;
+    }
+
+    .i9{
+        order:9;
+    }
+
+    .i10{
+        order:10;
     }
 
     .i11 {
@@ -194,6 +218,14 @@ td,th{
 
     .i14 {
         order: 13;
+    }
+
+    .i15{
+        order:15;
+    }
+
+    .i16{
+        order:16;
     }
 
     .i17 {
