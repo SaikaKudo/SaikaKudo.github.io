@@ -5,6 +5,7 @@ body{
 
 html{
     scroll-behavior: smooth;
+    font-size:62.5%;
 }
 
 
@@ -17,12 +18,18 @@ html{
     z-index: 2;
 }
 
+#logo{
+    float:left;
+    margin-left:1rem;
+    margin-top:0.5rem;
+}
+
 nav{
     width:100%;
     height:100px;
     background: #DA7992 0% 0% no-repeat padding-box;
     opacity: 1;
-    padding-top: 15px;
+    padding-top: 10px;
     box-sizing: border-box;
     border-bottom: 10px solid #F5E428;
 }
@@ -33,6 +40,9 @@ nav{
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
+    font-size:2.4rem;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .headli {
@@ -42,12 +52,12 @@ nav{
     display: block;
     text-decoration: none;
     color: #ffffff;
-    margin-left: 1em;
-    padding-right: 3em;
     font: normal normal normal 20px/30px Futura PT;
     letter-spacing: 0px;
     opacity: 1;
-    transition: .2s
+    transition: .2s;
+    margin-left:1rem;
+    margin-right:1rem;
 }
 
 .head_a:hover{
@@ -57,9 +67,10 @@ nav{
 
 /* ---------HOMEのCSS--------- */
 #home{
+    margin-top:1rem;
     margin-left: auto;
     margin-right: auto;
-    left: 261px;
+    max-width:1000px;
 }
 
 #home img{
@@ -69,14 +80,16 @@ nav{
 /* ---------ABOUTMEのCSS--------- */
 #aboutme{
     width: 75%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 990px;
+    margin-top:7.2rem;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 .title{
     color: #707070;
     font-family:Futura PT;
-    font-size: 3em;
+    font-size: 4.8rem;
     letter-spacing: 0px;
     text-align: center;
 }
@@ -102,7 +115,7 @@ nav{
 
 #myName{
     text-align: center;
-    font-size: 60px;
+    font-size: 6.0rem;
     font: normal normal normal Yu Gothic;
     letter-spacing: 0px;
     color: #707070;
@@ -120,11 +133,6 @@ nav{
     margin-top:1rem;
 }
 
-/* .furigana{
-    font-size: 1.5rem;
-    letter-spacing: 15px;
-    text-align: center;
-} */
 
 .viewmore{
     width: 300px;
@@ -164,58 +172,23 @@ nav{
     width:50%;
     margin-right: auto;
     margin-left:auto;
+    max-width:990px;
 
 }
 
-#pickUpFlex{
-    display:flex;
-}
-
-#pickup h2{
-    color:#707070;
-    font-weight: normal;
-}
-
-.oc{
-    width:100%;
-}
-
-.jiten{
-    width:50%;
-}
-
-@media (max-width: 767px) {
-    #pickup img {
-        width: 100%;
-    }
-}
 .animation{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 1.5s;
 }
-.pickup1{
-    animation-name: poyopoyo;
-}
-
-@keyframes poyopoyo {
-      0%, 40%, 60%, 80% {
-        transform: scale(1.0);
-      }
-      50%, 70% {
-        transform: scale(0.95);
-      }
-}
     
-
-
 
 .category-btn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px 0 40px;;
+  /* margin: 30px 0 40px;; */
   margin-right: auto;
   margin-left:auto;
 }
@@ -250,36 +223,31 @@ nav{
     box-shadow:none;
 }
 
-
 .category-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    width: calc(100% + 10px);
-    max-width: 900px;
+    width: 100%;
+    max-width: 990px;
     margin-left: auto;
     margin-right: auto;
-    background-color:#f4f4f4;
 }
 
 
 .category-list ul, .category-list li {
     list-style: none;
-    width:30%;
-    margin:5px;
-    
+    width:30%;  
 }
 
 .category-list:after {
     content: "";
     width: 30%;
-    margin:5px;
 }
   
 .category-list img {
-    width: 100%;
+    width: 90%;
     height:auto;
+    margin:1.5rem;
 }
   
 .category-list a {
@@ -303,6 +271,40 @@ nav{
       transform: none;
     }
   }
+
+@media (min-width: 365px) and (max-width: 767px) {
+    #works {
+        width: 90%;
+    }
+
+    .category-btn, .category-list {
+        width: 100%; 
+        margin: 0 auto; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .category-btn li, .category-list li {
+        width: 100%; /* 親要素の幅いっぱいに広げる */
+        display: flex; /* フレックスボックスを使ってアイテムを横に並べる */
+        justify-content: center; /* アイテムを中央揃えにする */
+    }
+
+    .category-btn a, .category-list a {
+        width: auto;
+    }
+
+    .category-list {
+        flex-wrap: wrap;
+    }
+
+    .category-list ul {
+        width: 100%;
+
+    .category-list img {
+        width: 50%; 
+    }
+}
 
 /* ---------contactsのCSS--------- */
 #contacts{
@@ -380,10 +382,4 @@ footer{
     .title{
         font-size: 1.2em;
     }
-
-    #works{
-        width: 30%;
-    }
-
-
 }
