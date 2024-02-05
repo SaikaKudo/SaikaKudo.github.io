@@ -43,3 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
       image.style.transform = "translateY(0)";
   }, 500); // ミリ秒単位で待機する時間を設定
 });
+
+
+//ハンバーガーメニューのスクリプト
+$('.nav_toggle').on('click', function () {
+  $('.nav_toggle, .nav').toggleClass('show');
+});
+
