@@ -9,26 +9,29 @@
     <link rel="apple-touch-icon" href="img/favcon.png" sizes="180x180">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="index.js"></script>
     <title>SaikaKudoPortfolio</title>
 </head>
 <body>
-
-    <header id="header">
-        <h1 id="logo">
-            <a href="index.html">
-                <img src="img_works/thumbnail.jpg" width="80px" height="80px">
-            </a>
-        </h1>
-
-        <nav class="nav">
-            <ul class="nav_menu_ul">
-                <li class="nav_menu_li"><a href="AboutMe.html" class="head_a">ABOUT ME</a></li>
-                <li class="nav_menu_li"><a href="#works" class="head_a">WORKS</a></li>
-                <li class="nav_menu_li"><a href="#contacts" class="head_a">CONTACT</a></li>
+    <header class="header">
+        <div class="header_inner">
+          <div class="logo">
+            <h1 class="title_h1"><a href="#"><img src="img_works/thumbnail.jpg" width="70px" height="70px"></a></h1>
+          </div>
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="index.html#works">WORKS</a></li>
+              <li class="nav_item"><a href="#aboutme">ABOUT ME</a></li>
+              <li class="nav_item"><a href="index.html#contact">CONTACT</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
 
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger_border hamburger_border_top"></span>
+          <span class="hamburger_border hamburger_border_center"></span>
+          <span class="hamburger_border hamburger_border_bottom"></span>
+        </div>
+        <div class="black_bg" id="js-black-bg"></div>
     </header>
 
     <div id="home">
@@ -98,5 +101,6 @@
         &copy; 2023 SaikaKudo
     </footer>
     
+    <script src="index.js"></script>
 </body>
 </html>

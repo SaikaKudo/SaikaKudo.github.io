@@ -10,92 +10,168 @@ html{
 
 
 /* ---------MENUのCSS--------- */
-#header {
+.header{
     position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    background: #DA7992 0% 0% no-repeat padding-box;
+    border-bottom: 10px solid #F5E428;
+  }
+
+  .header_inner {
+    position: relative;
+    padding: 15px;
+  }
+
+  .logo{
+    position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
+  }
+
+  .header_inner{
+    max-width: 990px;
     width: 100%;
-    z-index: 2;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#logo{
-    float:left;
-    margin-left:1rem;
-    margin-top:0.5rem;
-}
+  .nav_list{
+    text-align: right;
+  }
 
-nav{
-    width:100%;
-    height:100px;
-    background: #DA7992 0% 0% no-repeat padding-box;
-    opacity: 1;
-    padding-top: 10px;
-    box-sizing: border-box;
-    border-bottom: 10px solid #F5E428;
-}
+  .nav_list li{
+    display: inline-block;
+    text-align: right;
+    padding-left: 20px;
+    padding-top:5px;
+  }
 
-.nav_menu_ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
-    font-size:2.4rem;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-@media (min-width: 365px) and (max-width: 767px) {
-    nav{
-        width:100%;
-        height:15rem;
-        background: #DA7992 0% 0% no-repeat padding-box;
-        opacity: 1;
-        box-sizing: border-box;
-        border-bottom: 10px solid #F5E428;
-    }
-
-    .nav_menu_ul{
-        display:list-item;
-        list-style: none;
-        font-size:2.4rem;
-        margin-top:0;
-        margin-right:0;
-        margin-left:0px;
-    } 
-
-    .nav_menu_li{
-        margin-bottom:0.3rem;
-    }
-
-    .head_a {
-        text-decoration: none;
-        color: #ffffff;
-        font:Futura PT;
-        letter-spacing: 0px;
-        opacity: 1;
-        transition: .2s;
-    }
-    
-}
-
-
-.head_a {
-    display: block;
+  .nav_list li a{
+    color: #fff;
+    font-size:2rem;
     text-decoration: none;
-    color: #ffffff;
-    font: normal normal normal 20px/30px Futura PT;
-    letter-spacing: 0px;
-    opacity: 1;
-    transition: .2s;
-    margin-left:1rem;
-    margin-right:1rem;
-}
+  }
 
-.head_a:hover{
-    transform: translateY(-5px);
-}
+  .nav_list li a:hover{
+    color: #fff;
+    font-size:2rem;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  }
 
+  @media only screen and (max-width: 768px) {
+    .nav {
+        position: fixed;
+        right: -320px; /* 右から出てくる */
+        top: 0;
+        width: 300px; /* スマホに収まるサイズ */
+        height: 100vh;
+        padding-top: 60px;
+        background-color: #DA7992;
+        transition: all .6s;
+        z-index: 200;
+        overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+      }
+
+      .hamburger {
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        width: 50px; /* クリックしやすい幅 */
+        height: 50px; /* クリックしやすい高さ */
+        cursor: pointer;
+        z-index: 300;
+      }
+      .nav_list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .nav_list li {
+        display: block;
+        text-align: center;
+        padding:10px 0; /* トップとボトムにパディングを追加して、項目間にスペースを作る */
+      }
+      
+      .nav_item {
+        text-align: center;
+        padding: 0 14px;
+      }
+      .nav_item a {
+        display: block;
+        padding: 10px 0px;
+        text-decoration: none;
+        color: #fff;
+      }
+      .nav_item a:hover {
+        background-color: #333;
+      }
+      .hamburger_border {
+        position: absolute;
+        left: 11px;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        transition: all .6s;
+      }
+      
+      .hamburger_border_top {
+        top: 15px;
+      }
+      .hamburger_border_center {
+        top: 25px;
+      }
+      .hamburger_border_bottom {
+        top: 35px;
+      }
+      .black_bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        background-color: #333;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s;
+        cursor: pointer;
+      }
+    
+      /* 表示された時用のCSS */
+      .nav-open .nav {
+        right: 0;
+      }
+      .nav-open .black_bg {
+        opacity: .8;
+        visibility: visible;
+      }
+      .nav-open .hamburger_border_top {
+        transform: rotate(45deg);
+        top: 20px;
+      }
+      .nav-open .hamburger_border_center {
+        width: 0;
+        left: 50%;
+      }
+      .nav-open .hamburger_border_bottom {
+        transform: rotate(-45deg);
+        top: 20px;
+      }
+
+      .logo{
+        padding-left:30px;
+      }
+    }
+  
+  
 /* ---------HOMEのCSS--------- */
 #home{
     margin-top:1rem;
@@ -195,6 +271,28 @@ nav{
     margin-left:3px;
     margin-top:3px;
     box-shadow:none;
+}
+
+@media only screen and (max-width: 768px){
+    #aboutmeContainer{
+        flex-flow: column;
+    }
+    
+    #container1{
+        width:70%;
+    }
+
+    #container2{
+        width:100%;
+    }
+
+    #myName{
+        font-size: 3rem;
+    }
+
+    #intro{
+        font-size:1.5rem;
+    }
 }
 
 /* ---------WORKSのCSS--------- */
@@ -303,39 +401,23 @@ nav{
     }
   }
 
-@media (min-width: 365px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     #works {
         width: 90%;
     }
 
-    .category-btn, .category-list {
-        width: 100%; 
-        margin: 0 auto; 
-        flex-direction: column; 
-        align-items: center;
+     .category-btn {
+        display:none;
+     }
+
+    .category-list{
+        display: flex;
+        padding-left: 0px;
+        margin-right:0px;
     }
 
-    .category-btn li, .category-list li {
-        width: 100%; /* 親要素の幅いっぱいに広げる */
-        display: flex; /* フレックスボックスを使ってアイテムを横に並べる */
-        justify-content: center; /* アイテムを中央揃えにする */
-    }
-
-    .category-btn a, .category-list a {
-        width: auto;
-    }
-
-    .category-list {
-        flex-wrap: wrap;
-    }
-
-    .category-list ul {
-        width: 100%;
-        margin:0;
-    }
-
-    .category-list img {
-        width: 100%; 
+    .category-list li{
+        width:50%;
     }
 }
 
@@ -379,7 +461,7 @@ footer{
 
 /* ---------スマホのCSS--------- */
 
-@media (min-width: 365px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     html{
         overflow:auto;
     }
@@ -397,22 +479,4 @@ footer{
         width:100%;
     }
 
-    #aboutmeContainer{
-        display: block;
-        font-size: 20px;
-    }
-
-    #container1{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #container2{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .title{
-        font-size: 1.2em;
-    }
 }
