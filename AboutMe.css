@@ -1,8 +1,8 @@
 body{
-    font-family: "Futura PT","Yu Gothic";
+    font-family: 'Hind', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     margin:0;
 }
-
 html{
     scroll-behavior: smooth;
     font-size:62.5%;
@@ -54,6 +54,7 @@ html{
     color: #fff;
     font-size:2rem;
     text-decoration: none;
+    font-weight: 600;
   }
 
   .nav_list li a:hover{
@@ -64,7 +65,8 @@ html{
     transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
   }
 
-  @media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
     .nav {
         position: fixed;
         right: -320px; /* 右から出てくる */
@@ -168,119 +170,92 @@ html{
       .logo{
         padding-left:30px;
       }
-    }
-
-/* ---------aboutme(aboutme.html)のCSS--------- */
-.title{
-    color: #707070;
-    font: normal normal normal 60px/77px Futura PT;
-    letter-spacing: 0px;
 }
 
-#aboutme{
-    text-align: center;
-    margin-top: 10em;
+/* ---------中身のCSS--------- */
+.aboutme_container{
+    font-size: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 990px;
 }
 
-#myName{
-    width:40%;
-    margin-bottom: 5%;
-}
-
-#mePic{
-    width:20%;
-}
-
-#container2{
-    text-align: center;
+#motto{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    text-align: justify;
+    margin-bottom:2.5rem;
 }
 
 #intro{
-    font-family: Yu Gothic;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
-    text-align: justify;
-    display: inline-block;
-}
-
-
-#bio table{
-    margin-top: 4%;
     margin-left: auto;
     margin-right: auto;
-    font-family: Yu Gothic;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
-    text-align: left;
-    padding-left: 1rem;
-}
-
-
-/* ---------skillsのCSS--------- */
-#skills{
-    margin-top:10em;
-    text-align: center;
-}
-
-#skillscontainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    font-family: Yu Gothic;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
-    width:80%;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.child{
-    width:45%;
-    margin-top:1em;
+    max-width: 700px;
     text-align: justify;
+    margin-bottom:2.5rem;
 }
 
-.toolcontainer {
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2.5rem;
+}
+
+#container1{
+    margin-top: 150px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center; 
+    margin-bottom:2.5rem;
+    gap:2rem;
 }
 
-.toolItem {
-    text-align: left;
-    width: 50%; 
-    margin: 5px 0;
-}
-
-
-#skillscontainer table{
-    text-align: left;
+.container2 {
     margin-left: auto;
     margin-right: auto;
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 8px; 
 }
 
-#skillscontainer td{
-    padding-left: 1em;
+.container_title {
+    font-size: 2.4rem;
+    color: #333; 
+    margin-bottom: 1.5rem;
 }
 
-#skillscontainer th{
-    padding-top: 0.5em;
+.content {
+    flex-flow: row;
+    font-size: 1.6rem;
+    color: #666; 
 }
 
-@media (max-width: 767px) {
-    .child {
-        width: 100%; 
+.content img {
+    margin-right: 10px; 
+}
+
+@media only screen and (max-width: 768px) {
+    #container{
+        margin-top: 150px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
+
+    .container2{
+        width:80%;
+    }
+    
+   
 }
-
-
 
 /* ---------footerのCSS--------- */
 footer{
+    position: relative;
+    bottom:0;
     margin-top: 10em;
     width:100%;
     height:145px;

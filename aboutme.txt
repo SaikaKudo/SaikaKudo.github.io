@@ -1,0 +1,240 @@
+    <div id="aboutme">
+        <div id="aboutmeContainer"> 
+            <div id="container1">
+                <img src="img/me.png" alt="工藤才佳の写真" id="mePic">
+                <img src="img\moji.png" id="myName">
+            </div>
+
+            <div id="container2">
+                <div id="intro">
+                    工藤才佳(くどうさいか)<br>
+                    2002年7月　岩手県盛岡市生まれ<br>
+                    大妻女子大学社会情報学部社会情報学科情報デザイン専攻　中野ゼミ在籍<br>
+                    大学ではプログラミングやデザインスキルを武器にして、どうすれば社会を良くできるかについて学んでいます。<br>
+                    FUJIFILM XS-10をもち、青春18きっぷで旅行することが大好きです。<br>
+                    カメラと旅行が趣味です。FUJIFILM X-S10をもち、青春18きっぷで旅行することが大好きです。<br>
+                    旅先で見つけた記念スタンプは絶対押すし、顔抜き看板は絶対入って記念撮影するタイプです。<br>
+                </div>
+                <div id="bio">
+                    <table>
+                        <tr>
+                            <td>2018年4月</td>
+                            <td>岩手県立盛岡第三高等学校</td>
+                            <td>入学</td>
+                        </tr>
+                        <tr>
+                            <td>2021年3月</td>
+                            <td>岩手県立盛岡第三高等学校</td>
+                            <td>卒業</td>
+                        </tr>
+                        <tr>
+                            <td>2021年4月</td>
+                            <td>大妻女子大学社会情報学部社会情報学科情報デザイン専攻</td>
+                            <td>入学</td>
+                        </tr>
+                        <tr>
+                            <td>2025年3月</td>
+                            <td>大妻女子大学社会情報学部社会情報学科情報デザイン専攻</td>
+                            <td>卒業見込み</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="skills">
+        <div id="skillscontainer">
+            <div class="child">
+                <h3>デザインツール</h3>
+                <div class = "toolcontainer">
+                    <div class = "toolItem">
+                        Adobe Illustrator
+                    </div>
+                    <div class = "toolItem">
+                        簡単なグラフィック、Webサイト素材制作等
+                    </div>
+                    <div class = "toolItem">
+                        Adobe Photoshop
+                    </div>
+                    <div class = "toolItem">
+                        画像の加工
+                    </div>
+                    <div class = "toolItem">
+                        Adobe XD
+                    </div>
+                    <div class = "toolItem">
+                        UI設計
+                    </div>
+                    <div class = "toolItem">
+                        <th>Adobe PremierePro</th>
+                    </div>
+                    <div class = "toolItem">
+                        <th>簡単な動画編集</th>
+                    </div>
+                </div>
+            </div>
+
+            <div class="child">
+                <h3>プログラミング</h3>
+                <div class = "toolcontainer">
+                    <div class = "toolItem">
+                        HTML/CSS
+                    </div>
+                    <div class = "toolItem">
+                        基本的なWebページ制作
+                    </div>
+                    <div class = "toolItem">
+                        JavaScript/jQuery
+                    </div>
+                    <div class = "toolItem">
+                        Webページのアニメーション実装
+                    </div>
+                    <div class = "toolItem">
+                        Processing/p5js
+                    </div>
+                    <div class = "toolItem">
+                        メディアアート制作
+                    </div>
+                    <div class = "toolItem">
+                        PHP
+                    </div>
+                    <div class = "toolItem">
+                        簡単なシステムの設計
+                    </div>
+                </div>
+            </div>
+
+            <div class="child">
+                <h3>資格・免許</h3>
+                <div class = "toolcontainer">
+                    <div class = "toolItem">
+                        2019年6月
+                    </div>
+                    <div class = "toolItem">
+                        実用英語技能検定第2級取得
+                    </div>
+                    <div class = "toolItem">
+                        2022年7月
+                    </div>
+                    <div class = "toolItem">
+                        普通自動車第一種免許取得
+                    </div>
+                </div>
+            </div>
+
+            <div class="child">
+                <h3>その他</h3>
+                    高校生の頃は放送部と書道部に所属していました。
+                    書道は小1から高3まで続けていました。
+                    放送部では大会に出場し、ラジオドキュメント部門では全国大会出場、
+                    アナウンス部門では東北大会奨励賞を頂いた経験があります。
+            </div>
+        </div>
+    </div>
+
+
+
+
+/* ---------aboutme(aboutme.html)のCSS--------- */
+#aboutme{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#myName{
+    width:40%;
+    margin-bottom: 5%;
+}
+
+#mePic{
+    width:20%;
+}
+
+#container2{
+    text-align: center;
+}
+
+#intro{
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    text-align: justify;
+    display: inline-block;
+}
+
+
+#bio table{
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+/* ---------skillsのCSS--------- */
+#skills{
+    margin-top:10em;
+    text-align: center;
+}
+
+#skillscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: Yu Gothic;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.child{
+    width:45%;
+    margin-top:1em;
+    text-align: justify;
+}
+
+.toolcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.toolItem {
+    text-align: left;
+    width: 50%; 
+    margin: 5px 0;
+}
+
+
+#skillscontainer table{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skillscontainer td{
+    padding-left: 1em;
+}
+
+#skillscontainer th{
+    padding-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .child {
+        width: 100%; 
+    }
+}
