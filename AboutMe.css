@@ -267,6 +267,8 @@ footer{
     text-align: center;
     color:#ffffff;
     margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 @media (min-width: 365px) and (max-width: 767px) {
