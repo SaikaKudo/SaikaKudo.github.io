@@ -111,9 +111,11 @@ html{
         text-decoration: none;
         color: #fff;
       }
-      .nav_item a:hover {
+      
+      /* .nav_item a:hover {
         background-color: #333;
-      }
+      } */
+
       .hamburger_border {
         position: absolute;
         left: 11px;
@@ -208,7 +210,20 @@ table{
     align-items: center;
     justify-content: center; 
     margin-bottom:2.5rem;
-    gap:2rem;
+    max-width: 990px;
+}
+
+.me{
+  width:50%;
+  text-align: center;
+}
+
+
+.name img{ 
+  width:80%;
+  max-width:400px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .container2 {

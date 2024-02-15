@@ -112,9 +112,9 @@ html{
         text-decoration: none;
         color: #fff;
       }
-      .nav_item a:hover {
+      /* .nav_item a:hover {
         background-color: #333;
-      }
+      } */
       .hamburger_border {
         position: absolute;
         left: 11px;
@@ -196,7 +196,7 @@ html{
 }
 
 .title{
-    color: #707070;
+    color: #333;
     font-size: 4.8rem;
     letter-spacing: 0px;
     text-align: center;
@@ -228,7 +228,7 @@ html{
     text-align: center;
     font-size: 6.0rem;
     letter-spacing: 0px;
-    color: #707070;
+    color: #333;
     opacity: 1;
     font-weight: 600;
     margin-top:rem;
@@ -239,7 +239,7 @@ html{
     text-align: left;
     font-size: 20px;
     letter-spacing: 0px;
-    color: #707070;
+    color: #333;
     opacity: 1;
     margin-top:1.5rem;
     font-weight: 500;

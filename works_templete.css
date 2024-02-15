@@ -1,6 +1,7 @@
 body{
-    font-family: "Futura PT","Yu Gothic";
-    margin:0;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin:0;
 }
 
 html{
@@ -55,6 +56,7 @@ html{
     color: #fff;
     font-size:2rem;
     text-decoration: none;
+    font-weight: 600;
   }
 
   .nav_list li a:hover{
@@ -110,9 +112,11 @@ html{
         text-decoration: none;
         color: #fff;
       }
-      .nav_item a:hover {
-        background-color: #333;
-      }
+
+      /* .nav_item a:hover {
+        background-color: #ffffff;
+      } */
+      
       .hamburger_border {
         position: absolute;
         left: 11px;
@@ -173,189 +177,81 @@ html{
 
 
 /* ---------メイン部分のCSS--------- */
-.title{
-    color: #707070;
-    font: normal normal normal 60px/77px Futura PT;
-    letter-spacing: 0px;
-}
-
 #works{
-    margin-top: 10em;
-    text-align: center;
-    font-family:Yu Gothic;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
-
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+  margin-top:150px;
 }
 
-#works img{
-    margin-top: 1em;
-    width: 30%;
+.img{
+  max-width: 990px;
 }
 
-table{
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-td,th{
-    padding-left: 1em;
-    padding-top: 1em;
-}
-
-#btn{
-    display: flex;
-    justify-content: space-around;
-}
-
-
-#btn{
-    width:300px;
-    height: 15%; 
-    line-height:35px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    font-family: Futura PT;
-}
-
-#btn a{
-    display:block;
-    text-decoration: none;
-    background:#43B0D5;
-    text-align:center;
-    color:#FFFFFF;
-    font-size:20px;
-    border-radius:50px;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    box-shadow:3px 3px 0px 0px #F5E428 ;
-    transition: .2s;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-#btn a:hover{
-    background:#43B0D5;
-    color:#FFFFFF;
-    box-shadow:none;
-    margin-left:3px;
-    margin-top:3px;
-}
-
-
-/* ---------OCwebのCSS--------- */
-.flexContainer{
-    display: flex;
-    flex-wrap: wrap;
-    width:75%;
-    /* margin-top:5rem; */
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.item{
-    width:45%;
-    text-align: justify;
-    align-self: center;
-    flex-grow: 1;
-    justify-content: space-between;
-    
-}
-
-.itemImg{
+@media only screen and (max-width: 768px) {
+  .img{
     width:90%;
-    margin-left:1rem;
-}
-
-.itemTitle{
-    font-weight: bold;
-}
-
-@media (max-width: 767px) {
-    .item {
-        width: 90%; 
-    }
-
-    .i1{
-        order:1;
-    }
-
-    .i2{
-        order:2;
-    }
-
-    .i3 {
-        order:4;
-    }
-
-    .i4 {
-        order:3;
-    }
-
-    .i5{
-        order:5;
-    }
-
-    .i6{
-        order:6;
-    }
-
-    .i7 {
-        order: 8;
-    }
-
-    .i8 {
-        order: 7;
-    }
-
-    .i9{
-        order:9;
-    }
-
-    .i10{
-        order:10;
-    }
-
-    .i11 {
-        order: 12;
-    }
-
-    .i12 {
-        order: 11;
-    }
-
-    .i13 {
-        order: 14;
-    }
-
-    .i14 {
-        order: 13;
-    }
-
-    .i15{
-        order:15;
-    }
-
-    .i16{
-        order:16;
-    }
-
-    .i17 {
-        order: 17;
-    }
-
-    .i18 {
-        order: 18;
-    }
+  }
 
 }
 
+.pt_btn{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom:10rem;
+  margin-left: auto;
+  margin-right:auto;
+  bottom: -1px;
+}
 
+.pt_btn a:visited {
+  color: #333;
+} */
+
+.pt_btn a::after{
+ visibility: hidden;
+ opacity: 0;
+
+}
+
+.pt_btn a:hover::after{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+ }
+
+
+.btn a{
+  display:block;
+  text-decoration: none;
+  background:#43B0D5;
+  text-align:center;
+  color:#FFFFFF;
+  font-size:20px;
+  border-radius:50px;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  box-shadow:3px 3px 0px 0px #F5E428 ;
+  transition: .2s;
+  width:150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:auto;
+  padding-bottom:auto;
+}
+
+.btn a:hover{
+  background:#43B0D5;
+  color:#FFFFFF;
+  margin-left:3px;
+  margin-top:3px;
+  box-shadow:none;
+  width:150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:auto;
+  padding-bottom:auto;
+}
 
 /* ---------footerのCSS--------- */
 footer{
@@ -370,4 +266,6 @@ footer{
     border-top: 10px solid #F5E428;
     text-align: center;
     color:#ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
