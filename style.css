@@ -437,7 +437,6 @@ html{
     margin-left:auto;
     text-align: center;
     width:100%;
-    font-family: Yu Gothic;
     color:#707070;
 }
 
@@ -489,6 +488,10 @@ footer{
 
     #home img{
         width:100%;
+    }
+
+    #mainImg{
+      margin-top:10em;
     }
 
 }
