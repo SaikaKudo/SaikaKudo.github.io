@@ -206,12 +206,11 @@ html{
 
 .pt_btn a:visited {
   color: #333;
-} */
+} 
 
 .pt_btn a::after{
  visibility: hidden;
  opacity: 0;
-
 }
 
 .pt_btn a:hover::after{
